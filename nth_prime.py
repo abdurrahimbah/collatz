@@ -1,6 +1,6 @@
-// Collatz Conjecture
-// Copyright (C) 2026 Abdur Rahim
-// Licensed under GPL-3.0-or-later
+# Collatz Conjecture
+# Copyright (C) 2026 Abdur Rahim
+# Licensed under GPL-3.0-or-later
 
 def is_prime(num): # tests if the input number is prime
     if num < 2:
