@@ -1,3 +1,7 @@
+// Collatz Conjecture
+// Copyright (C) 2026 Abdur Rahim
+// Licensed under GPL-3.0-or-later
+
 def is_prime(num):
     if num < 2:
         return False

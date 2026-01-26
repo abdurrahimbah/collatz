@@ -1,3 +1,7 @@
+// Collatz Conjecture
+// Copyright (C) 2026 Abdur Rahim
+// Licensed under GPL-3.0-or-later
+
 def collatz(n, collatz_points = None):
 	
 	if collatz_points is None:
