@@ -5,11 +5,26 @@
 from collatz import collatz
 from nth_prime import nth_prime
 
-n = int(input("Hello. Please enter a number: "))
-prime_number = nth_prime(n)
-print(str(n) + "th prime number is : " + str(prime_number))
+print("Welcome to to the Collatz project written by Abdur Rahim. You have two options. ")
+print("Option 1: Enter an integer to compute the Collatz sequence starting from it.")
+print("Option 2: Enter an integer (n) to find nth prime number and compute the Collatz sequence starting from the prime number.")
 
-points = collatz(prime_number)
-print(points)
+choice = input("Choose your option, collatz or prime_collatz: ")
+if (choice == "2"): 
+	n = int(input("Please enter a number: "))
+	prime_number = nth_prime(n)
+	print(str(n) + "th prime number is : " + str(prime_number))
+
+	points = collatz(prime_number)
+	print("The Collatz sequence atarting at " + str(prime_number) + " is: \n" + str(points))
+elif choice == "1": 
+	n = int(input("Please enter a number: "))
+	points = collatz(n)
+	print("The Collatz sequence starting at " + str(n) + " is: " + str(points))
+else: 
+	print("See you.")
+
+
+
 
 
