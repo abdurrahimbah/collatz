@@ -2,7 +2,7 @@
 # Copyright (C) 2026 Abdur Rahim
 # Licensed under GPL-3.0-or-later
 
-from collatz import collatz
+from collatz import collatz, collatz_simple
 from nth_prime import nth_prime
 
 print("Welcome to to the Collatz project written by Abdur Rahim. You have two options. ")
@@ -13,14 +13,13 @@ choice = input("Choose your option, collatz or prime_collatz: ")
 if (choice == "2"): 
 	n = int(input("Please enter a number: "))
 	prime_number = nth_prime(n)
-	print(str(n) + "th prime number is : " + str(prime_number))
-
-	points = collatz(prime_number)
-	print("The Collatz sequence atarting at " + str(prime_number) + " is: \n" + str(points))
+	print(str(n) + "th prime number is : ")
+	print("The Collatz sequence atarting at " + str(prime_number) + " is: ")
+	collatz_simple(prime_number)
 elif choice == "1": 
 	n = int(input("Please enter a number: "))
-	points = collatz(n)
-	print("The Collatz sequence starting at " + str(n) + " is: " + str(points))
+	print("The Collatz sequence starting at " + str(n) + " is: ")
+	collatz_simple(n)
 else: 
 	print("See you.")
 
