@@ -1,3 +1,7 @@
+Collatz Conjecture 
+Copyright (C) 2026 Abdur Rahim 
+Licensed under GPL-3.0-or-later 
+
 # Just open the project in terminal and run 
 
 python3 main.py or
