@@ -1,6 +1,6 @@
-Collatz Conjecture 
-Copyright (C) 2026 Abdur Rahim 
-Licensed under GPL-3.0-or-later 
+Collatz Conjecture <br>
+Copyright (C) 2026 Abdur Rahim <br>
+Licensed under GPL-3.0-or-later <hr>
 
 In the name of Allah, the Entirely Merciful, the Especially Merciful.
 
