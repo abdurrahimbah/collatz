@@ -9,6 +9,8 @@ n = int(input("Hello. Please enter a number: "))
 prime_number = nth_prime(n)
 print(str(n) + "th prime number is : " + str(prime_number))
 
+print("The Collatz Sequence starting at " + str(n) + " is: ")
+
 points = collatz(prime_number)
 print(points)
 
