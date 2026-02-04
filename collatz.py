@@ -21,15 +21,22 @@ def collatz(n, collatz_points = None):
 
 def collatz_simple(n): 
 	points = []
-	print(n)
 	points.append(n)
 	while n > 1:
 		if n % 2 == 0: 
 			n = int(n / 2)
-			print(n)
 			points.append(n)
 		else: 
 			n = 3 * n + 1
-			print(n)
 			points.append(n)
 	return points
+
+def collatz_simple_print(n): 
+	print(n)
+	while n > 1:
+		if n % 2 == 0: 
+			n = int(n / 2)
+			print(n)
+		else: 
+			n = 3 * n + 1
+			print(n)
