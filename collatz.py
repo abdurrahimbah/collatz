@@ -24,7 +24,7 @@ def collatz_simple(n):
 	points.append(n)
 	while n > 1:
 		if n % 2 == 0: 
-			n = int(n / 2)
+			n //= 2
 			points.append(n)
 		else: 
 			n = 3 * n + 1
@@ -35,7 +35,7 @@ def collatz_simple_print(n):
 	print(n)
 	while n > 1:
 		if n % 2 == 0: 
-			n = int(n / 2)
+			n //= 2
 			print(n)
 		else: 
 			n = 3 * n + 1
